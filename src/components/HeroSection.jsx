@@ -1,5 +1,6 @@
 import herooo from "../assets/herooo.png";
 import Dive from  "../assets/Dive-collage.png"
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section
@@ -36,10 +37,23 @@ function Hero() {
               <span>🧠 AI Risk Prediction</span>
             </div>
 
-            <button className="mt-10 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-8 py-4 rounded-xl transition-all duration-300 flex items-center gap-3 shadow-lg">
-              Learn More
-              <span>→</span>
-            </button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-left mt-8">
+
+  <Link
+    to="/login"
+    className="px-8 py-4 rounded-xl bg-white text-sky-700 font-semibold border border-sky-200 hover:bg-sky-50 transition text-center"
+  >
+    Login
+  </Link>
+
+  <Link
+    to="/dashboard"
+    className="px-8 py-4 rounded-xl bg-sky-600 text-white font-semibold hover:bg-sky-700 transition text-center"
+  >
+    Get Started
+  </Link>
+
+</div>
           </div>
 
           {/* Right Image */}
